@@ -1,0 +1,50 @@
+# WHAT HAPPENS WHEN YOU TYPE HTTPS://WWW.GOOGLE.COM IN YOUR BROWSER AND PRESS ENTER
+
+All of the things that happen in the background when you type https://www.google.com into your browser and press Enter are what enable you to access the Google website. In this blog post, we’ll go over all of the numerous steps in this process and explain what happens at each one. 
+When you press enter on your keyboard, your request passes through the following protocols:
+
+* DNS REQUEST
+* TCP/IP
+* FIREWALL
+* HTTPS/SSL
+* LOAD-BALANCER
+* WEB SERVER
+* APPLICATION SERVER
+* DATABASE
+
+Let’s now dissect each stage.
+
+### DNS REQUEST
+
+The first step in visiting any website is to change the domain name (www.google.com) into an IP address that the network can understand. The technical name for this process is a DNS (Domain Name System) request. When you enter the URL into your browser, your computer sends a DNS query to a DNS server to find out the IP address of the server hosting the website.
+
+### TCP/IP
+
+Once you have the IP address of the web server, the next step is to connect your computer to it. This connection is established using the TCP/IP protocol. The TCP/IP protocol is a collection of rules that regulates data flow over the internet. The task of separating the data into packets and ensuring that each packet reaches its destination falls to the Transmission Control Protocol (TCP). The IP (Internet Protocol) must be used to route the packets to the appropriate location.
+
+### FIREWALL
+
+Before the connection is established, the packets are inspected by your computer’s firewall to ensure they are not malicious. A firewall is a piece of network security system that monitors and controls network traffic entering and leaving the system in line with predetermined rules. In the event that malicious packets are identified, the connection is broken and the packets are terminated.
+
+### HTTPS/SSL
+
+After the connection has been established, the following step is to initiate an HTTPS (Hypertext Transfer Protocol Secure) connection. When using HTTPS, a secure version of HTTP, the information being passed between your computer and the web server is encrypted. This is done by using the TLS (Transport Layer Security) or SSL (Secure Sockets Layer) protocols. During transmission, SSL/TLS ensures that the data is encrypted and cannot be read or intercepted by a third party.
+
+### LOAD-BALANCER
+
+The request is routed to a load balancer once the HTTPS connection has been established. A device or a software known as a load balancer divides up incoming network traffic among several web servers. This keeps the load on each server balanced and keeps traffic from overwhelming any one server.
+
+### WEB SERVER
+
+The load balancer sends the HTTPS request to one of the web servers. The web server finds the required resource or web page to process the request after it has been received. The web server then sends the response back to your computer or device.
+
+### APPLICATION SERVER
+
+The web server could occasionally lack the necessary data to process the request. The web server forwards the request to an application server in certain circumstances. Any server-side code needed to produce the answer must be run by the application server. For instance, the application server will confirm your login information before delivering the requested content if you are logging into a web application.
+
+### DATABASE
+
+The application server may occasionally need to retrieve the required data from a database. The application server sends a request to the database, which answers with the required information and sends it back to the application server. The application server then uses the information that was retrieved to create the response.
+
+To sum up, accessing a webpage requires a complex set of steps that happen almost instantaneously. It is important to follow every step involved in obtaining the requested content into your browser, from the DNS request to the application server and database. Understanding these stages might help with problem-solving when viewing websites and provide an appreciation for the complexity of the internet architecture.
+
